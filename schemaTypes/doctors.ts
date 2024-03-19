@@ -43,8 +43,8 @@ export default defineType({
         defineField({
             name: 'pastExperience',
             title: 'Past Experience',
-            type: 'reference',
-            to: { type: 'workandexperience' },
+            type: 'array',
+            of: [{ type: 'reference', to: { type: 'workandexperience' } }],
             validation: (Rule: any) => Rule.required()
         }),
         defineField({
@@ -56,8 +56,8 @@ export default defineType({
         defineField({
             name: 'education',
             title: 'Education',
-            type: 'reference',
-            to: { type: 'education' },
+            type: 'array',
+            of: [{ type: 'reference', to: { type: 'education' } }],
             validation: (Rule: any) => Rule.required()
         }),
         defineField({
