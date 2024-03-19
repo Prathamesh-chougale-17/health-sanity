@@ -6,14 +6,9 @@ export default defineType({
     type: 'document',
     fields: [
         defineField({
-            name: 'work',
-            title: 'Work and Experience',
-            type: 'string',
-        }),
-        defineField({
             name: 'hospital',
             title: 'Hospital',
-            type: 'text',
+            type: 'string',
         }),
         defineField({
             name: 'year',
