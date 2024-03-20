@@ -22,6 +22,12 @@ export default defineType({
             validation: (Rule: any) => Rule.required()
         }),
         defineField({
+            name: "doctorid",
+            title: 'Doctor ID',
+            type: 'string',
+            validation: (Rule: any) => Rule.required()
+        }),
+        defineField({
             name: 'email',
             title: 'Email',
             type: 'email',
